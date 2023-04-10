@@ -1,0 +1,15 @@
+.nav {
+  display: flex;
+  gap: 2rem;
+  overflow: auto;
+  padding: 1rem;
+}
+.nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  flex: 1;
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}

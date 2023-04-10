@@ -1,0 +1,10 @@
+.header {
+  background-color: cornflowerblue;
+}
+.header-info {
+  display: flex;
+  color: #ffffff;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}

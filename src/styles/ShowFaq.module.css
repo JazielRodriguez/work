@@ -1,0 +1,40 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  height: 80vh;
+  width: 80%;
+  border-radius: 4px;
+}
+.modal-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+.faqs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #ffffff;
+  padding: 1rem 3rem;
+}
+.faqs-list li {
+  background-color: cornflowerblue;
+  cursor: pointer;
+}
+.faq {
+  padding: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ans {
+  padding: 0.6rem;
+  color: #000000;
+  background-color: #ffffff;
+  border-bottom: 1px solid #bbb5b5;
+  cursor: default;
+}
