@@ -1,0 +1,12 @@
+.enquiries {
+  width: 90%;
+  margin: 2rem auto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 4px;
+  padding: 1rem;
+  box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.1);
+}

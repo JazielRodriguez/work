@@ -1,0 +1,18 @@
+.first-form {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid #bbb5b5;
+  width: 90%;
+  margin: 0 auto;
+}
+.first-form label {
+  font-size: 1.2rem;
+}
+.first-form .input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

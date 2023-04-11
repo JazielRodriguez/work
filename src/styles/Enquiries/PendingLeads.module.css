@@ -1,0 +1,41 @@
+.pending-leads-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  color: #ffffff;
+  background-color: #1ac414;
+}
+.pending-leads-header p {
+  font-size: 1.2rem;
+}
+.table {
+  width: 80%;
+  margin: 0 auto 0 5rem;
+  padding: 2rem 0;
+}
+.table div:last-child {
+  border-bottom: 1px solid #bbb5b5;
+}
+.table div:first-child {
+  font-weight: 700;
+}
+.table div {
+  display: flex;
+  gap: 1rem;
+  border: 1px solid #bbb5b5;
+  padding: 1rem 0;
+  border-bottom: none;
+}
+.table div p {
+  font-size: 1.2rem;
+  flex: 1;
+  text-align: center;
+}
+
+.table div p:first-child {
+  color: #2f75f7;
+}
+.table div:first-child p:first-child {
+  color: #000;
+}

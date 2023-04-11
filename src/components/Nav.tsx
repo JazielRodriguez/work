@@ -19,11 +19,16 @@ const Nav: React.FC<NavProps> = (props) => {
                 {link.label}
               </Link>
               )
-            : (
-              <Link href={link.label} key={index}>
+            : link.onSetQdFormVisible === true
+              ? (
+              <Link href={link.label} key={index} onClick={props.onSetQdFormVisible}>
                 {link.label}
               </Link>
-              )
+                )
+              : (
+                <Link href={link.label} key={index}>
+                {link.label}</Link>
+                )
       )}
     </nav>
   )

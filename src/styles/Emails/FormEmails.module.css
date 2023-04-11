@@ -1,0 +1,43 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #bbb5b5;
+}
+
+.input-container {
+  display: flex;
+  gap: 2rem;
+}
+.input-container .flex {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 70%;
+}
+.input-container .flex:first-child {
+  width: 30%;
+}
+.input-container .flex label {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.input-container .flex input {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: 1px solid #868282;
+  border-radius: 6px;
+}
+.button {
+  width: fit-content;
+}
+.button button {
+  padding: 1rem 1.5rem;
+  color: #000;
+  border: none;
+  background-color: #f5da45;
+  font-size: 1.2rem;
+}

@@ -10,5 +10,5 @@ export const links = [
   { label: 'running lead' },
   { label: 'manual dial', onSetManualDialVisible: true },
   { label: 'dial this lead' },
-  { label: 'qd forms' }
+  { label: 'qd forms', onSetQdFormVisible: true }
 ]

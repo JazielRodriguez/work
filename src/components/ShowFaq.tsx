@@ -6,13 +6,13 @@ import { faqs } from '../utils/faqs'
 import FAQ from './FAQ'
 import { IconContext } from 'react-icons'
 import Background from './Background'
-const ShowFaq: React.FC<ShowFaqProps> = (props) => { 
+const ShowFaq: React.FC<ShowFaqProps> = (props) => {
   return (
-    <IconContext.Provider value={{ size: '2rem' }}>
+    <IconContext.Provider value={{ size: '1.4rem' }}>
       <Background>
         <div className={styles.modal}>
           <div className={styles['modal-nav']}>
-            <h2>FAQ{"'"}s type</h2>
+            <p>FAQ{"'"}s type</p>
             <div onClick={props.onSetFaqVisible} style={{ cursor: 'pointer' }}>
               <IconContext.Provider
                 value={{ color: '#bbb5b5', size: '1.4rem' }}

@@ -7,42 +7,43 @@
   height: 50vh;
   width: 80%;
   border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .modal-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 0;
-  width: 80%;
+  padding: 4rem 0 2rem 0;
+  width: 90%;
   margin: 0 auto;
+  border-bottom: 1px solid #bbb5b5;
 }
 .form {
+  padding: 2rem 0;
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   gap: 1rem;
 }
 .form label {
   color: #868282;
   margin-top: 1rem;
+  font-size: 1.4rem;
 }
 .form input {
   padding: 0.5rem 1rem;
   outline: none;
   border: 1px solid #868282;
   border-radius: 6px;
+  font-size: 1.2rem;
 }
 .form button {
   margin-top: 1rem;
   color: #ffffff;
   border: none;
-  background-color: cornflowerblue;
+  background-color: #2f75f7;
   padding: 1.2rem 1rem;
   width: fit-content;
   border-radius: 4px;
+  font-size: 1.2rem;
 }

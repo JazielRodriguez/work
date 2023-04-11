@@ -1,0 +1,25 @@
+.resume {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.resume p {
+  font-size: 1.2rem;
+}
+.resume-sent-emails,
+.resume-received-emails {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.resume-sent-emails div,
+.resume-received-emails div {
+  display: flex;
+  gap: 0.5rem;
+}
+.resume-sent-emails div p,
+.resume-received-emails div p {
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.2);
+}

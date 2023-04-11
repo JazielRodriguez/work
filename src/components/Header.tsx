@@ -21,6 +21,7 @@ const Header: React.FC<HeaderProps> = (props) => {
       <Nav
         onSetFaqVisible={props.onSetFaqVisible}
         onSetManualDialVisible={props.onSetManualDialVisible}
+        onSetQdFormVisible={props.onSetQdFormVisible}
       />
     </header>
   )

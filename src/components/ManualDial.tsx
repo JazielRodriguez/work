@@ -9,7 +9,7 @@ const ManualDial: React.FC<ManualDialProps> = (props) => {
     <Background>
       <div className={styles.modal}>
         <div className={styles['modal-nav']}>
-          <h2>Manual dial</h2>
+          <p>Manual dial</p>
           <div
             onClick={props.onSetManualDialVisible}
             style={{ cursor: 'pointer' }}

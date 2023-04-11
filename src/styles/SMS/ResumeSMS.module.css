@@ -1,0 +1,20 @@
+.resume {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.resume-sent-sms {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.resume-sent-sms div {
+  display: flex;
+  gap: 0.5rem;
+}
+.resume-sent-sms div p {
+  font-size: 1.2rem;
+  padding: 2rem;
+  font-weight: 700;
+}

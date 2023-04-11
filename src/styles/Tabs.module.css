@@ -1,0 +1,22 @@
+.tabs {
+  background-color: #2f75f7;
+  padding-top: 0.4rem;
+}
+.tabs-content {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 1rem;
+  width: 90%;
+}
+.tabs p {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+p.active {
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 4px 4px 0 0;
+}
