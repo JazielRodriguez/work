@@ -10,5 +10,5 @@ export const tabs = [
   'Reminder details',
   'Product info',
   'Supplier info',
-  'Report'
+  'Reports'
 ]

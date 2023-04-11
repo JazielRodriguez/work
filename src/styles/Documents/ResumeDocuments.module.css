@@ -1,0 +1,36 @@
+.table {
+  width: 100%;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+.table .flex {
+  display: flex;
+  gap: 1rem;
+  border: 1px solid #bbb5b5;
+  padding: 1rem 0;
+  border-bottom: none;
+}
+.table .flex:last-child {
+  border-bottom: 1px solid #bbb5b5;
+}
+.table .flex:first-child {
+  font-weight: 700;
+}
+.table .flex p {
+  font-size: 1.2rem;
+  border-right: 1px solid #bbb5b5;
+  width: 25%;
+}
+.table .flex p:last-child {
+  border: none;
+}
+.table .flex p:first-child {
+  padding: 0 1rem;
+}
+.table .flex p:nth-child(3) {
+  color: blue;
+}
+.table .flex:first-child p:first-child,
+.table .flex:first-child p:nth-child(3) {
+  color: #000;
+}

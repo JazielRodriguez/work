@@ -1,0 +1,30 @@
+.form {
+  padding: 2rem 0;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  border-bottom: 1px solid #bbb5b5;
+  width: 90%;
+  margin: 0 auto;
+}
+.form .input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+.form .input label {
+  font-size: 1.2rem;
+}
+.form .input input {
+  width: 100%;
+}
+.form button {
+  padding: 1rem 1.5rem;
+  color: #000;
+  border: none;
+  background-color: #f5da45;
+  font-size: 1.2rem;
+  grid-row: 6;
+}

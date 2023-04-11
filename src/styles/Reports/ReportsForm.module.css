@@ -1,0 +1,39 @@
+.form {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #bbb5b5;
+}
+.form .flex {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.form label {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.form input {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: 1px solid #868282;
+  border-radius: 6px;
+}
+.button {
+  grid-column: 6;
+}
+.button button {
+  padding: 1rem 1.5rem;
+  color: #ffffff;
+  border: none;
+  background-color: red;
+  font-size: 1.2rem;
+  border-radius: 4px;
+}

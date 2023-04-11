@@ -1,0 +1,34 @@
+.form {
+  padding: 2rem 0;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.input-container input,
+.input-container label {
+  font-size: 1.2rem;
+}
+.input-container label {
+  font-weight: 700;
+}
+.flex input {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: 1px solid #868282;
+  border-radius: 6px;
+}
+.flex {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

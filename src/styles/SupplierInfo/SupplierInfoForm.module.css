@@ -1,0 +1,35 @@
+.form {
+  padding: 2rem 0;
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 1px solid #bbb5b5;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.form .input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 40%;
+}
+.form .input label {
+  font-size: 1.2rem;
+}
+.form .input input {
+  width: 100%;
+}
+.form .button {
+  width: 20%;
+}
+.form .button button {
+  width:100%;
+  padding: 1rem 1.5rem;
+  border: none;
+  font-size: 1.2rem;
+  color: #ffffff;
+  background: red;
+  border-radius: 4px;
+}

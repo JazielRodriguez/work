@@ -1,0 +1,40 @@
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #bbb5b5;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  gap: 2rem;
+}
+.flex > * {
+  flex: 1;
+}
+.flex label {
+  text-align: center;
+}
+.flex input,
+.flex label {
+  font-size: 1.2rem;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+.buttons button {
+  font-size: 1.2rem;
+  padding: 1rem 1.5rem;
+  color: #000;
+  border: none;
+  background-color: #59ce3c;
+  color: #ffffff;
+  border-radius: 4px;
+}
+.buttons button:first-child {
+  background-color: red;
+}

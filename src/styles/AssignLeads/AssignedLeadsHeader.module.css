@@ -1,0 +1,11 @@
+.all-assigned-leads-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  color: #ffffff;
+  background-color: #1ac414;
+}
+.all-assigned-leads-header p {
+  font-size: 1.2rem;
+}

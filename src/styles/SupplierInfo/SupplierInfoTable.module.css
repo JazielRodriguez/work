@@ -1,0 +1,39 @@
+.table {
+  width: 60%;
+  margin: 0 auto 0 5rem;
+  padding: 2rem 0;
+}
+.table div {
+  display: flex;
+  gap: 1rem;
+  border: 1px solid #bbb5b5;
+  padding: 1rem 1rem;
+  border-bottom: none;
+}
+.table div:last-child {
+  border-bottom: 1px solid #bbb5b5;
+}
+.table div:first-child {
+  font-weight: 700;
+}
+.table div p {
+  font-size: 1.2rem;
+  border-right: 1px solid #bbb5b5;
+  width: 20%;
+}
+.table div button {
+  font-size: 1.2rem;
+  width: 20%;
+  padding: 1rem 1.5rem;
+  color: #000;
+  border: none;
+  background-color: #2f75f7;
+  color: #ffffff;
+  border-radius: 4px;
+}
+.table div p:last-child {
+  border: none;
+}
+.table div:first-child p:first-child {
+  color: #000;
+}
