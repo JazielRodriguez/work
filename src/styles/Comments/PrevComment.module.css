@@ -1,0 +1,22 @@
+.prev {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.label {
+  font-weight: 700;
+}
+.prev p {
+  font-size: 1.2rem;
+}
+.prev-comment-field {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  height: 10rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid #bbb5b5;
+}

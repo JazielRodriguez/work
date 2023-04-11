@@ -10,6 +10,7 @@ import LastCalls from './components/LastCalls'
 import Enquiries from './components/Enquiries/Enquiries'
 import Emails from './components/Emails/Emails'
 import SMS from './components/SMS/SMS'
+import Comments from './components/Comments/Comments'
 // Hooks
 import { useAppState } from './hooks/useAppState'
 import { useTabsState } from './hooks/useTabsState'
@@ -38,6 +39,7 @@ const App: React.FC = () => {
       {tabIsActive === 1 && <Enquiries />}
       {tabIsActive === 2 && <Emails />}
       {tabIsActive === 3 && <SMS />}
+      {tabIsActive === 4 && <Comments />}
 
       {faqIsVisible && <ShowFaq onSetFaqVisible={faqHandler} />}
       {manualDialIsVisible && (
