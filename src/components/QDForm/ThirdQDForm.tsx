@@ -1,5 +1,8 @@
+// DEPENDENCIES
 import React from 'react'
+// COMPONENTS
 import CheckboxInput from '../CheckboxInput'
+// STYLES
 import styles from '../../styles/QDForm/ThirdQDForm.module.css'
 const ThirdQDForm: React.FC = () => {
   return (

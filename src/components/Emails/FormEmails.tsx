@@ -1,5 +1,7 @@
+// DEPENDENCIES
 import React from 'react'
 import Select from 'react-select'
+// STYLES
 import styles from '../../styles/Emails/FormEmails.module.css'
 const FormEmails: React.FC = () => {
   return (

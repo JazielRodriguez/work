@@ -1,11 +1,16 @@
+// DEPENDENCIES
 import React from 'react'
-import styles from '../styles/ShowFaq.module.css'
 import { ImCross } from 'react-icons/im'
-import { ShowFaqProps } from '../props/ShowFaq'
-import { faqs } from '../utils/faqs'
-import FAQ from './FAQ'
 import { IconContext } from 'react-icons'
+// COMPONENTS
 import Background from './Background'
+import FAQ from './FAQ'
+// REACT PROPS
+import { ShowFaqProps } from '../props/ShowFaq'
+// UTILITIES (FAKE DATA)
+import { faqs } from '../utils/faqs'
+// STYLES
+import styles from '../styles/ShowFaq.module.css'
 const ShowFaq: React.FC<ShowFaqProps> = (props) => {
   return (
     <IconContext.Provider value={{ size: '1.4rem' }}>

@@ -1,7 +1,11 @@
+// DEPENDENCIES
 import React from 'react'
+// COMPONENTS
 import Nav from './Nav'
-import styles from '../styles/Header.module.css'
+// REACT PROPS
 import { HeaderProps } from '../props/Header'
+// STYLES
+import styles from '../styles/Header.module.css'
 const Header: React.FC<HeaderProps> = (props) => {
   return (
     <header className={styles.header}>

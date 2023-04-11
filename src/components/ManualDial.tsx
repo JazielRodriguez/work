@@ -1,9 +1,13 @@
+// DEPENDENCIES
 import React from 'react'
-import Background from './Background'
-import styles from '../styles/ManualDial.module.css'
-import { IconContext } from 'react-icons'
 import { ImCross } from 'react-icons/im'
+import { IconContext } from 'react-icons'
+// COMPONENTS
+import Background from './Background'
+// REACT PROPS
 import { ManualDialProps } from '../props/ManualDial'
+// STYLES
+import styles from '../styles/ManualDial.module.css'
 const ManualDial: React.FC<ManualDialProps> = (props) => {
   return (
     <Background>

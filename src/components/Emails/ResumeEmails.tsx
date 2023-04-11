@@ -1,4 +1,6 @@
+// DEPENDENCIES
 import React from 'react'
+// STYLES
 import styles from '../../styles/Emails/ResumeEmails.module.css'
 const ResumeEmails: React.FC = () => {
   return (

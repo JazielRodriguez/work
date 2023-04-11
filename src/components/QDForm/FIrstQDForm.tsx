@@ -1,5 +1,7 @@
+// DEPENDENCIES
 import React from 'react'
 import Select from 'react-select'
+// STYLES
 import styles from '../../styles/QDForm/FirstQDForm.module.css'
 const FirstQDForm: React.FC = () => {
   return (

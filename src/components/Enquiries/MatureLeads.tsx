@@ -1,6 +1,8 @@
+// DEPENDENCIES
 import React, { useState } from 'react'
 import { IconContext } from 'react-icons'
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai'
+// STYLES
 import styles from '../../styles/Enquiries/MatureLeads.module.css'
 const MatureLeads: React.FC = () => {
   const [listIsVisible, setListIsVisible] = useState(false)
@@ -37,7 +39,7 @@ const MatureLeads: React.FC = () => {
               <p>20-20-1000</p>
             </div>
           </div>
-        </div> 
+        </div>
       )}
     </div>
   )

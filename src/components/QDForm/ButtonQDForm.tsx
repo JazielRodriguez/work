@@ -1,4 +1,6 @@
+// DEPENDENCIES
 import React from 'react'
+// STYLES
 import styles from '../../styles/QDForm/ButtonsQDForm.module.css'
 const ButtonsQDForm: React.FC = () => {
   return (

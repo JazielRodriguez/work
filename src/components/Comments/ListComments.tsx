@@ -1,4 +1,6 @@
+// DEPENDENCIES
 import React from 'react'
+// STYLES
 import styles from '../../styles/Comments/ListComments.module.css'
 const ListComments: React.FC = () => {
   return (

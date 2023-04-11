@@ -1,6 +1,8 @@
+// DEPENDENCIES
 import React, { useState } from 'react'
 import { IconContext } from 'react-icons'
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai'
+// STYLES
 import styles from '../../styles/Enquiries/NotMatureLeads.module.css'
 const NotMatureLeads: React.FC = () => {
   const [listIsVisible, setListIsVisible] = useState(false)

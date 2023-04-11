@@ -1,9 +1,12 @@
+// DEPENDENCIES
 import React from 'react'
-import styles from '../../styles/Enquiries.module.css'
-
+// COMPONENTS
 import PendingLeads from './PendingLeads'
 import MatureLeads from './MatureLeads'
 import NotMatureLeads from './NotMatureLeads'
+// STYLES
+import styles from '../../styles/Enquiries.module.css'
+
 const Enquiries: React.FC = () => {
   return (
     <div className={styles.enquiries}>

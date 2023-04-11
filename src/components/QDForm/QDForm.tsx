@@ -1,13 +1,18 @@
+// DEPENDENCIES
+
 import React from 'react'
-import Background from '../Background'
-import styles from '../../styles/QDForm/QDForm.module.css'
 import { IconContext } from 'react-icons'
 import { ImCross } from 'react-icons/im'
+// COMPONENTS
 import SecondQDForm from './SecondQDForm'
 import FirstQDForm from './FIrstQDForm'
 import ThirdQDForm from './ThirdQDForm'
 import ButtonsQDForm from './ButtonQDForm'
+import Background from '../Background'
+// REACT PROPS
 import { QDFormProps } from '../../props/QDForm'
+// STYLES
+import styles from '../../styles/QDForm/QDForm.module.css'
 const QDForm: React.FC<QDFormProps> = (props) => {
   return (
     <Background>

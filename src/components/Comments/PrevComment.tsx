@@ -1,4 +1,6 @@
+// DEPENDENCIES
 import React from 'react'
+// STYLES
 import styles from '../../styles/Comments/PrevComment.module.css'
 const PrevComment: React.FC = () => {
   return (

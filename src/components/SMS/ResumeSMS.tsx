@@ -1,4 +1,6 @@
+// DEPENDENCIES
 import React from 'react'
+// STYLES
 import styles from '../../styles/SMS/ResumeSMS.module.css'
 const ResumeSMS: React.FC = () => {
   return (

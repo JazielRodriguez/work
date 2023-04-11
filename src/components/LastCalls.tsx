@@ -1,4 +1,6 @@
+// DEPENDENCIES
 import React from 'react'
+// STYLES
 import styles from '../styles/LastCalls.module.css'
 const LastCalls: React.FC = () => {
   return (
@@ -29,7 +31,7 @@ const LastCalls: React.FC = () => {
           <p>31/1/15, 12:1:12</p>
         </div>
       </div>
-    </div> 
+    </div>
   )
 }
 export default LastCalls

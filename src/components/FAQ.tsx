@@ -1,6 +1,8 @@
+// DEPENDENCIES
 import React, { useState } from 'react'
-import { FAQProps } from '../props/FAQ'
 import { AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai'
+// REACT PROPS
+import { FAQProps } from '../props/FAQ'
 const FAQ: React.FC<FAQProps> = (props) => {
   const [ansIsVisible, setAnsIsVisible] = useState<boolean>()
   const ansHandler = () => {
@@ -12,7 +14,11 @@ const FAQ: React.FC<FAQProps> = (props) => {
         <p>{props.faq}</p>
         <div>{ansIsVisible ? <AiOutlineMinus /> : <AiOutlinePlus />}</div>
       </div>
-      {ansIsVisible && <div className={props.classNameANS}><p>{props.ans}</p></div>}
+      {ansIsVisible && (
+        <div className={props.classNameANS}>
+          <p>{props.ans}</p>
+        </div>
+      )}
     </li>
   )
 }

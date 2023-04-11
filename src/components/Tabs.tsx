@@ -1,7 +1,11 @@
+// DEPENDENCIES
 import React from 'react'
-import { tabs } from '../utils/tabs'
-import styles from '../styles/Tabs.module.css'
+// REACT PROPS
 import { TabsProps } from '../props/Tabs'
+// UTILITIES (FAKE DATA)
+import { tabs } from '../utils/tabs'
+// STYLES
+import styles from '../styles/Tabs.module.css'
 const Tabs: React.FC<TabsProps> = (props) => {
   return (
     <div className={styles.tabs}>
