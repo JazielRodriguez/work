@@ -11,6 +11,8 @@
 }
 .table {
   width: 80%;
+  display: grid;
+  grid-template-columns: 1fr;
   margin: 0 auto 0 5rem;
   padding: 2rem 0;
 }
@@ -21,15 +23,17 @@
   font-weight: 700;
 }
 .table div {
-  display: flex;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
   gap: 1rem;
   border: 1px solid #bbb5b5;
-  padding: 1rem 0;
+  padding: 1rem;
   border-bottom: none;
+  align-items: center;
 }
 .table div p {
   font-size: 1.2rem;
-  flex: 1;
   text-align: center;
 }
 
@@ -64,4 +68,14 @@
 }
 .pagination p {
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .table {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .table div p {
+    font-size: 0.6rem;
+  }
 }

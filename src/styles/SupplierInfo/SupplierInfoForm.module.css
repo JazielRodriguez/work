@@ -25,11 +25,22 @@
   width: 20%;
 }
 .form .button button {
-  width:100%;
+  width: 100%;
   padding: 1rem 1.5rem;
   border: none;
   font-size: 1.2rem;
   color: #ffffff;
   background: red;
   border-radius: 4px;
+}
+@media screen and (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+  }
+  .form .input {
+    width: 100%;
+  }
+  .form .button {
+    width: 50%;
+  }
 }

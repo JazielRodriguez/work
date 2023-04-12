@@ -29,7 +29,9 @@ const App: React.FC = () => {
     qdFormHandler,
     faqIsVisible,
     manualDialIsVisible,
-    qdFormIsVisible
+    qdFormIsVisible,
+    appIsActive,
+    appIsActiveHandler
   } = useAppState()
 
   const { tabIsActive, activateTabHandler } = useTabsState()
@@ -37,24 +39,25 @@ const App: React.FC = () => {
   return (
     <div>
       <Header
+        onSetAppActive={appIsActiveHandler}
         onSetFaqVisible={faqHandler}
         onSetManualDialVisible={manualDialHandler}
         onSetQdFormVisible={qdFormHandler}
       />
-      <MainForm />
+      {appIsActive && <MainForm />}
       <Tabs onActivateTab={activateTabHandler} tabIsActive={tabIsActive} />
-      {tabIsActive === 0 && <LastCalls />}
-      {tabIsActive === 1 && <Enquiries />}
-      {tabIsActive === 2 && <Emails />}
-      {tabIsActive === 3 && <SMS />}
-      {tabIsActive === 4 && <Comments />}
-      {tabIsActive === 5 && <AssignLeads />}
-      {tabIsActive === 6 && <Documents />}
-      {tabIsActive === 7 && <PersonalInfo />}
-      {tabIsActive === 8 && <ReminderDetails />}
-      {tabIsActive === 9 && <ProductInfo />}
-      {tabIsActive === 10 && <SupplierInfo />}
-      {tabIsActive === 11 && <Reports />}
+      {appIsActive && tabIsActive === 0 && <LastCalls />}
+      {appIsActive && tabIsActive === 1 && <Enquiries />}
+      {appIsActive && tabIsActive === 2 && <Emails />}
+      {appIsActive && tabIsActive === 3 && <SMS />}
+      {appIsActive && tabIsActive === 4 && <Comments />}
+      {appIsActive && tabIsActive === 5 && <AssignLeads />}
+      {appIsActive && tabIsActive === 6 && <Documents />}
+      {appIsActive && tabIsActive === 7 && <PersonalInfo />}
+      {appIsActive && tabIsActive === 8 && <ReminderDetails />}
+      {appIsActive && tabIsActive === 9 && <ProductInfo />}
+      {appIsActive && tabIsActive === 10 && <SupplierInfo />}
+      {appIsActive && tabIsActive === 11 && <Reports />}
 
       <div
         style={{

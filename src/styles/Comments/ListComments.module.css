@@ -30,3 +30,9 @@
 .table div:first-child p:first-child {
   color: #000;
 }
+@media screen and (max-width: 768px) {
+  .table {
+    width: 100%;
+    margin: 0 auto;
+  }
+}

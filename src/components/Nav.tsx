@@ -13,35 +13,41 @@ const Nav: React.FC<NavProps> = (props) => {
       {links.map((link, index) =>
         link.onSetFaqVisible === true
           ? (
-          <Link href={link.label} key={index} onClick={props.onSetFaqVisible}>
-            {link.label}
-          </Link>
+              <Link href={link.label} key={index} onClick={props.onSetFaqVisible}>
+                {link.label}
+              </Link>
             )
           : link.onSetManualDialVisible === true
             ? (
-              <Link
-              href={link.label}
-              key={index}
-              onClick={props.onSetManualDialVisible}
-              >
-                {link.label}
-              </Link>
+                <Link
+                  href={link.label}
+                  key={index}
+                  onClick={props.onSetManualDialVisible}
+                  >
+                  {link.label}
+                </Link>
               )
             : link.onSetQdFormVisible === true
               ? (
-                <Link
-                href={link.label}
-                key={index}
-                onClick={props.onSetQdFormVisible}
-                >
-                  {link.label}
-                </Link>
-                )
-              : (
-                  <Link href={link.label} key={index}>
+              <Link
+                  href={link.label}
+                  key={index}
+                  onClick={props.onSetQdFormVisible}
+                  >
                     {link.label}
                   </Link>
                 )
+              : link.onSetAppActive === true
+                ? (
+                    <Link href={link.label} key={index} onClick={props.onSetAppActive}>
+                      {link.label}
+                    </Link>
+                  )
+                : (
+                    <Link href={link.label} key={index}>
+                      {link.label}
+                    </Link>
+                  )
       )}
     </nav>
   )

@@ -19,7 +19,7 @@ const SupplierInfoTable: React.FC = () => {
       </div>
       <div>
         <p>ID1</p>
-        <p>Some apartment</p>
+        <p>Some apartmentSome apartment Some apartment</p>
         <p>Some name</p>
         <p>Manager</p>
         <button>Click to call</button>

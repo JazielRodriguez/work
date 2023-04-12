@@ -67,3 +67,17 @@
   border: 1px solid #bbb5b5;
   color: #bbb5b5;
 }
+
+@media screen and (max-width: 768px) {
+  .modal {
+    height: 80vh;
+  }
+  .form div {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .form div label,
+  .form div input {
+    width: 100%;
+  }
+}

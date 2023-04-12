@@ -11,31 +11,23 @@ const TableEmail: React.FC<TableEmailProps> = (props) => {
   return (
     <div>
       <div className={styles.table}>
-        <div className={styles['header-table']}>
+        <div>
           {props.headers.map((header, index) => (
-            <div key={index}>
-              <p>{header}</p>
-            </div>
+            <p key={index}>{header}</p>
           ))}
         </div>
         {props.emails.map((email, index) => (
-          <div key={index} className={styles['cell-table']}>
-            <div>
-              <p>{email.email}</p>
-            </div>
-            <div>
-              <p
-                onClick={() => {
-                  setModalInfo(email)
-                  modalStateHandler()
-                }}
-              >
-                {email.subject}
-              </p>
-            </div>
-            <div>
-              <p>{email.sender}</p>
-            </div>
+          <div key={index}>
+            <p>{email.email}</p>
+            <p
+              onClick={() => {
+                setModalInfo(email)
+                modalStateHandler()
+              }}
+            >
+              {email.subject}
+            </p>
+            <p>{email.sender}</p>
           </div>
         ))}
       </div>

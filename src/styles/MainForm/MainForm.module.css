@@ -56,3 +56,13 @@
 .main-form-header p:last-child {
   font-size: 1.2rem;
 }
+
+@media screen and (max-width:768px) {
+  .input-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .flex {
+    width: 100%;
+  }
+}

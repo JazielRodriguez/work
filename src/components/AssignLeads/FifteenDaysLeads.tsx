@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
 import AssignedLeadsHeader from './AssignedLeadsHeader'
 import AssignLeadsTable from './AssignLeadsTable'
+import { useMediaQuery } from 'react-responsive'
+import MobileTable from './MobileTable'
 const FifteenDaysLeads: React.FC = () => {
+  const isMobile = useMediaQuery({ query: '(max-width:768px)' })
   const [listIsVisible, setListIsVisible] = useState<boolean>(false)
   const listStateHandler = () => {
     setListIsVisible((prev) => !prev)
@@ -13,7 +16,8 @@ const FifteenDaysLeads: React.FC = () => {
         isVisible={listIsVisible}
         onSetVisible={listStateHandler}
       />
-      {listIsVisible && <AssignLeadsTable />}
+      {listIsVisible && isMobile && <MobileTable />}
+      {listIsVisible && !isMobile && <AssignLeadsTable />}
     </div>
   )
 }

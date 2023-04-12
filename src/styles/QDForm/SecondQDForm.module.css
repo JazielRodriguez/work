@@ -20,3 +20,8 @@
 .second-form .second-input input {
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  .second-form {
+    grid-template-columns: 1fr;
+  }
+}

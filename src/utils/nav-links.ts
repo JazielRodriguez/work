@@ -5,7 +5,7 @@ export const links = [
   { label: 'auto-calls' },
   { label: 'search lead' },
   { label: 'add manual lead' },
-  { label: 'show or hide' },
+  { label: 'show or hide', onSetAppActive: true },
   { label: 'show faq', onSetFaqVisible: true },
   { label: 'running lead' },
   { label: 'manual dial', onSetManualDialVisible: true },

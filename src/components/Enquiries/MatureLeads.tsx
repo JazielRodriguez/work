@@ -12,7 +12,7 @@ const MatureLeads: React.FC = () => {
   return (
     <div>
       <div className={styles['mature-leads-header']} onClick={listStateHandler}>
-        <p>Pending leads</p>
+        <p>Mature leads</p>
         <IconContext.Provider value={{ size: '1.4rem' }}>
           <div>{listIsVisible ? <AiOutlineMinus /> : <AiOutlinePlus />}</div>
         </IconContext.Provider>

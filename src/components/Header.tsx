@@ -26,6 +26,7 @@ const Header: React.FC<HeaderProps> = (props) => {
         onSetFaqVisible={props.onSetFaqVisible}
         onSetManualDialVisible={props.onSetManualDialVisible}
         onSetQdFormVisible={props.onSetQdFormVisible}
+        onSetAppActive={props.onSetAppActive}
       />
     </header>
   )

@@ -26,7 +26,7 @@ const ResumeDocuments: React.FC = () => {
         </p>
         <p>Previous policy</p>
         <p>someName.pdf</p>
-        <p>31/31/31 - 12:12:12</p>
+        <p>31/31/31 - 12:12:12 31/31/31 - 12:12:1231/31/31 - 12:12:12</p>
         <p>AUTO</p>
       </div>
       <div className={styles.flex}>

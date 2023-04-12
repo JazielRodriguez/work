@@ -34,3 +34,13 @@
 .table div:first-child p:first-child {
   color: #000;
 }
+@media screen and (max-width:768px) {
+  .container {
+    width: 95%;
+    margin: 2rem auto;
+  }
+  .table {
+    width: 100%;
+    margin: 0 auto;
+  }
+}

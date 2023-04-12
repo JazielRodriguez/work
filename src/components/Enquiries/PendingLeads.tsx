@@ -34,12 +34,12 @@ const PendingLeads: React.FC = () => {
             </div>
             <div>
               <p>CAL1</p>
-              <p>Some cool name</p>
+              <p>Some cool nameSome cool nameSome cool name</p>
               <p>Another cool</p>
               <p>Health</p>
               <p>dispute</p>
               <p>06-01-2020</p>
-              <p>20-20-1000</p>
+              <p>20-20-100020-20-100020-20-100020-20-1000</p>
             </div>
           </div>
           <div className={styles.pagination}>

@@ -44,3 +44,14 @@
 .form button:last-child {
   background: #2f75f7;
 }
+@media screen and (max-width: 768px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+  .large {
+    grid-column: auto;
+  }
+  .buttons {
+    grid-column: auto;
+  }
+}

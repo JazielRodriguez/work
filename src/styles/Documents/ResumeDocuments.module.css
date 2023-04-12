@@ -34,3 +34,14 @@
 .table .flex:first-child p:nth-child(3) {
   color: #000;
 }
+@media screen and (max-width: 768px) {
+  .table .flex {
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
+    gap: 0.5rem;
+  }
+  .table .flex p {
+    font-size: 0.6rem;
+  }
+}

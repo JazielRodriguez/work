@@ -15,7 +15,7 @@ const NotMatureLeads: React.FC = () => {
         className={styles['not-mature-leads-header']}
         onClick={listStateHandler}
       >
-        <p>Pending leads</p>
+        <p>Not mature leads</p>
         <IconContext.Provider value={{ size: '1.4rem' }}>
           <div>{listIsVisible ? <AiOutlineMinus /> : <AiOutlinePlus />}</div>
         </IconContext.Provider>
