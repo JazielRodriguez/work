@@ -29,7 +29,7 @@
 .faqs-list li {
   background-color: #2f75f7;
   cursor: pointer;
-  border-radius: 4px 4px 0 0;
+  border-radius: 4px;
 }
 .faqs-list li p {
   font-size: 1.2rem;
@@ -47,5 +47,28 @@
   cursor: default;
   box-shadow: 0px 2.5px 2.5px 0px rgba(0, 0, 0, 0.2);
   border-radius: 0 0 4px 4px;
+  font-size: 1.2rem;
+}
+.filter-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+.filter {
+  display: flex;
+  width: 30%;
+  padding-top: 2rem;
+  gap: 2rem;
+}
+.filter input {
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: 1px solid #868282;
+  border-radius: 6px;
+}
+.filter input,
+.filter select {
   font-size: 1.2rem;
 }

@@ -56,6 +56,30 @@ const App: React.FC = () => {
       {tabIsActive === 10 && <SupplierInfo />}
       {tabIsActive === 11 && <Reports />}
 
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '0.5rem',
+          padding: '2rem 0',
+          width: 'fit-content',
+          marginLeft: '5rem'
+        }}
+      >
+        <p style={{ color: 'red', fontSize: '1.2rem' }}>Enquiry No:null</p>
+        <button
+          style={{
+            padding: '1rem 1.5rem',
+            color: '#000',
+            border: 'none',
+            backgroundColor: '#f5da45',
+            fontSize: '1.2rem'
+          }}
+        >
+          Update Lead
+        </button>
+      </div>
+
       {faqIsVisible && <ShowFaq onSetFaqVisible={faqHandler} />}
       {manualDialIsVisible && (
         <ManualDial onSetManualDialVisible={manualDialHandler} />

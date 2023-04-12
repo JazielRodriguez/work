@@ -1,0 +1,69 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  max-height: 60vh;
+  overflow: auto;
+  width: 80%;
+  border-radius: 4px;
+  overflow: auto;
+  padding: 4rem;
+}
+.modal-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.modal-nav p {
+  font-size: 1.8rem;
+}
+.form {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.form div {
+  display: flex;
+}
+.form div label {
+  width: 10%;
+}
+.form div input {
+  width: 90%;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: 1px solid #868282;
+  border-radius: 6px;
+}
+.form .buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.form .buttons button {
+  padding: 1rem 1.5rem;
+  color: #000;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.form .buttons button:first-child {
+  background-color: #222222;
+  color: #ffffff;
+}
+.form .buttons button:nth-child(2) {
+  background-color: red;
+  color: #ffffff;
+}
+.form .buttons button:nth-child(3) {
+  background-color: #59ce3c;
+  color: #ffffff;
+}
+.form .buttons button:last-child {
+  border: 1px solid #bbb5b5;
+  color: #bbb5b5;
+}

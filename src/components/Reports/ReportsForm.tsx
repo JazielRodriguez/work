@@ -6,11 +6,11 @@ const ReportsForm: React.FC = () => {
     <form className={styles.form}>
       <div className={styles.flex}>
         <label htmlFor=''>From</label>
-        <input type='text' />
+        <input type='date' />
       </div>
       <div className={styles.flex}>
         <label htmlFor=''>To</label>
-        <input type='text' />
+        <input type='date' />
       </div>
       <div className={styles.flex}>
         <label htmlFor=''>Lead type</label>

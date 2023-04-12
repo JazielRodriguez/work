@@ -37,11 +37,24 @@
   border-radius: 6px;
   font-size: 1.2rem;
 }
+.buttons {
+  display: flex;
+  align-items: items;
+  justify-content: space-between;
+}
+.buttons button:last-child {
+  border: 1px solid #bbb5b5;
+  color: #bbb5b5;
+}
+.buttons button:first-child {
+  background-color: #2f75f7;
+}
 .form button {
+  cursor: pointer;
   margin-top: 1rem;
   color: #ffffff;
   border: none;
-  background-color: #2f75f7;
+
   padding: 1.2rem 1rem;
   width: fit-content;
   border-radius: 4px;

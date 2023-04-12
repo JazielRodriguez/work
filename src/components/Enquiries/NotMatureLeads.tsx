@@ -42,6 +42,14 @@ const NotMatureLeads: React.FC = () => {
               <p>20-20-1000</p>
             </div>
           </div>
+          <div className={styles.pagination}>
+            <p>Showing 1 of 1 entries</p>
+            <div>
+              <p>Previous</p>
+              <p>1</p>
+              <p>Next</p>
+            </div>
+          </div>
         </div>
       )}
     </div>

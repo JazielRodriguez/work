@@ -13,6 +13,7 @@
   border-radius: 4px;
   padding: 1rem;
   font-size: 1.2rem;
+  cursor: pointer;
 }
 .close {
   border: 1px solid #bbb5b5;

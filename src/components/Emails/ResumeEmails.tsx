@@ -1,25 +1,26 @@
 // DEPENDENCIES
 import React from 'react'
+// UTILS (FAKE DATA)
+import { emails } from '../../utils/emails'
 // STYLES
 import styles from '../../styles/Emails/ResumeEmails.module.css'
+import TableEmail from './TableEmail'
 const ResumeEmails: React.FC = () => {
   return (
     <div className={styles.resume}>
       <div className={styles['resume-sent-emails']}>
         <p>Sent emails</p>
-        <div>
-          <p>To</p>
-          <p>Subject</p>
-          <p>Received on</p>
-        </div>
+        <TableEmail
+          headers={['To', 'Subject', 'Received on']}
+          emails={emails}
+        />
       </div>
-      <div className={styles['resume-received-emails']}>
-        <p>Received emails</p>
-        <div>
-          <p>From_mail</p>
-          <p>Subject</p>
-          <p>Received on</p>
-        </div>
+      <div>
+        <p className={styles['received-header']}>Received emails</p>
+        <TableEmail
+          headers={['From_mail', 'Subject', 'Received on']}
+          emails={emails}
+        />
       </div>
     </div>
   )

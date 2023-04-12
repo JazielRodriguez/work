@@ -32,3 +32,27 @@
   flex-direction: column;
   gap: 0.5rem;
 }
+.label-input {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.label-input input {
+  width: fit-content;
+}
+.main-form-header {
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.main-form-header p:first-child {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.main-form-header p:last-child {
+  font-size: 1.2rem;
+}

@@ -1,0 +1,28 @@
+.table {
+  margin: 1.5rem 0;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  border: 1px solid #bbb5b5;
+}
+.header-table,
+.cell-table {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.table .cell-table:nth-child(even) {
+  background-color: #dfd9d9;
+}
+.header-table div,
+.cell-table div {
+  width: 100%;
+  overflow: auto;
+  padding: 1rem 1.5rem;
+}
+.header-table div p {
+  font-weight: 700;
+}
+.cell-table div:nth-child(2) {
+  color: blue;
+  text-decoration: underline;
+}

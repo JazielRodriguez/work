@@ -2,6 +2,7 @@
 import React from 'react'
 import { ImCross } from 'react-icons/im'
 import { IconContext } from 'react-icons'
+import Select from 'react-select'
 // COMPONENTS
 import Background from './Background'
 import FAQ from './FAQ'
@@ -24,6 +25,12 @@ const ShowFaq: React.FC<ShowFaqProps> = (props) => {
               >
                 <ImCross />
               </IconContext.Provider>
+            </div>
+          </div>
+          <div className={styles['filter-container']}>
+            <div className={styles.filter}>
+              <Select />
+              <input type='text' placeholder='Enter value to search' />
             </div>
           </div>
           <ul className={styles['faqs-list']}>

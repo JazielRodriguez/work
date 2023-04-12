@@ -26,7 +26,10 @@ const ManualDial: React.FC<ManualDialProps> = (props) => {
         <form className={styles.form}>
           <label htmlFor='dial'>Enter number to dial</label>
           <input id='dial' type='number' placeholder='Enter phone number' />
-          <button>Dial Now</button>
+          <div className={styles.buttons}>
+            <button>Dial Now</button>
+            <button onClick={props.onSetManualDialVisible}>Close</button>
+          </div>
         </form>
       </div>
     </Background>

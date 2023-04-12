@@ -51,7 +51,7 @@ const QDForm: React.FC<QDFormProps> = (props) => {
         >
           <p>Documents required</p>
         </div>
-        <ButtonsQDForm />
+        <ButtonsQDForm onSetQdFormVisible={props.onSetQdFormVisible}/>
       </div>
     </Background>
   )

@@ -39,3 +39,29 @@
 .table div:first-child p:first-child {
   color: #000;
 }
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto 0 5rem;
+}
+.pagination div {
+  display: flex;
+  gap: 1rem;
+}
+.pagination div p {
+  padding: 1rem;
+  border: 1px solid #2f75f7;
+}
+.pagination div p:nth-child(2) {
+  color: #fff;
+  background: #2f75f7;
+}
+.pagination div p:hover {
+  color: #fff;
+  background: #2f75f7;
+  cursor: pointer;
+}
+.pagination p {
+  font-size: 1.2rem;
+}
