@@ -1,5 +1,6 @@
 // Dependencies
 import React from 'react'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 // Components
 import Header from './components/Header'
 import MainForm from './components/MainForm/MainForm'
@@ -22,6 +23,9 @@ import Reports from './components/Reports/Reports'
 import { useAppState } from './hooks/useAppState'
 import { useTabsState } from './hooks/useTabsState'
 import ReminderDetails from './components/ReminderDetails'
+import { Route } from 'wouter'
+import SearchLead from './components/SearchLead/SearchLead'
+const queryClient = new QueryClient()
 const App: React.FC = () => {
   const {
     faqHandler,
@@ -37,58 +41,71 @@ const App: React.FC = () => {
   const { tabIsActive, activateTabHandler } = useTabsState()
 
   return (
-    <div>
-      <Header
-        onSetAppActive={appIsActiveHandler}
-        onSetFaqVisible={faqHandler}
-        onSetManualDialVisible={manualDialHandler}
-        onSetQdFormVisible={qdFormHandler}
-      />
-      {appIsActive && <MainForm />}
-      <Tabs onActivateTab={activateTabHandler} tabIsActive={tabIsActive} />
-      {appIsActive && tabIsActive === 0 && <LastCalls />}
-      {appIsActive && tabIsActive === 1 && <Enquiries />}
-      {appIsActive && tabIsActive === 2 && <Emails />}
-      {appIsActive && tabIsActive === 3 && <SMS />}
-      {appIsActive && tabIsActive === 4 && <Comments />}
-      {appIsActive && tabIsActive === 5 && <AssignLeads />}
-      {appIsActive && tabIsActive === 6 && <Documents />}
-      {appIsActive && tabIsActive === 7 && <PersonalInfo />}
-      {appIsActive && tabIsActive === 8 && <ReminderDetails />}
-      {appIsActive && tabIsActive === 9 && <ProductInfo />}
-      {appIsActive && tabIsActive === 10 && <SupplierInfo />}
-      {appIsActive && tabIsActive === 11 && <Reports />}
+    <QueryClientProvider client={queryClient}>
+      <div>
+        <Header
+          onSetAppActive={appIsActiveHandler}
+          onSetFaqVisible={faqHandler}
+          onSetManualDialVisible={manualDialHandler}
+          onSetQdFormVisible={qdFormHandler}
+        />
+        {appIsActive && (
+          <Route path='/'>
+            <MainForm />
+          </Route>
+        )}
+        {appIsActive && (
+          <Route path='/search-lead'>
+            <SearchLead />
+          </Route>
+        )}
 
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          gap: '0.5rem',
-          padding: '2rem 0',
-          width: 'fit-content',
-          marginLeft: '5rem'
-        }}
-      >
-        <p style={{ color: 'red', fontSize: '1.2rem' }}>Enquiry No:null</p>
-        <button
+        <Tabs onActivateTab={activateTabHandler} tabIsActive={tabIsActive} />
+
+        {appIsActive && tabIsActive === 0 && <LastCalls />}
+        {appIsActive && tabIsActive === 1 && <Enquiries />}
+        {appIsActive && tabIsActive === 2 && <Emails />}
+        {appIsActive && tabIsActive === 3 && <SMS />}
+        {appIsActive && tabIsActive === 4 && <Comments />}
+        {appIsActive && tabIsActive === 5 && <AssignLeads />}
+        {appIsActive && tabIsActive === 6 && <Documents />}
+        {appIsActive && tabIsActive === 7 && <PersonalInfo />}
+        {appIsActive && tabIsActive === 8 && <ReminderDetails />}
+        {appIsActive && tabIsActive === 9 && <ProductInfo />}
+        {appIsActive && tabIsActive === 10 && <SupplierInfo />}
+        {appIsActive && tabIsActive === 11 && <Reports />}
+
+        <div
           style={{
-            padding: '1rem 1.5rem',
-            color: '#000',
-            border: 'none',
-            backgroundColor: '#f5da45',
-            fontSize: '1.2rem'
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '0.5rem',
+            padding: '2rem 0',
+            width: 'fit-content',
+            marginLeft: '5rem'
           }}
         >
-          Update Lead
-        </button>
-      </div>
+          <p style={{ color: 'red', fontSize: '1.2rem' }}>Enquiry No:null</p>
+          <button
+            style={{
+              padding: '1rem 1.5rem',
+              color: '#000',
+              border: 'none',
+              backgroundColor: '#f5da45',
+              fontSize: '1.2rem'
+            }}
+          >
+            Update Lead
+          </button>
+        </div>
 
-      {faqIsVisible && <ShowFaq onSetFaqVisible={faqHandler} />}
-      {manualDialIsVisible && (
-        <ManualDial onSetManualDialVisible={manualDialHandler} />
-      )}
-      {qdFormIsVisible && <QDForm onSetQdFormVisible={qdFormHandler} />}
-    </div>
+        {faqIsVisible && <ShowFaq onSetFaqVisible={faqHandler} />}
+        {manualDialIsVisible && (
+          <ManualDial onSetManualDialVisible={manualDialHandler} />
+        )}
+        {qdFormIsVisible && <QDForm onSetQdFormVisible={qdFormHandler} />}
+      </div>
+    </QueryClientProvider>
   )
 }
 export default App

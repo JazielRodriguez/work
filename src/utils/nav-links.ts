@@ -3,7 +3,7 @@ export const links = [
   { label: 'hangup' },
   { label: 'update lead' },
   { label: 'auto-calls' },
-  { label: 'search lead' },
+  { label: 'search-lead' },
   { label: 'add manual lead' },
   { label: 'show or hide', onSetAppActive: true },
   { label: 'show faq', onSetFaqVisible: true },

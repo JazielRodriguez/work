@@ -1,11 +1,23 @@
 // DEPENDENCIES
 import React from 'react'
+import { useQuery } from '@tanstack/react-query'
+import axios from 'axios'
 // STYLES
 import styles from '../styles/LastCalls.module.css'
 const LastCalls: React.FC = () => {
+  const { data } = useQuery({
+    queryKey: ['LastCalls'],
+    queryFn: () =>
+      axios
+        .post(
+          'http://localhost:3000/api/GetLastTenCalls?VICIUSER=reception'
+        )
+        .then((res) => res.data)
+  })
+
   return (
     <div className={styles.container}>
-      <div className={styles.table}>
+      {/* <div className={styles.table}>
         <div>
           <p>RecordID</p>
           <p>Phone</p>
@@ -30,7 +42,8 @@ const LastCalls: React.FC = () => {
           <p>Some cool name</p>
           <p>31/1/15, 12:1:12</p>
         </div>
-      </div>
+      </div> */}
+      <div dangerouslySetInnerHTML={{ __html: data }}></div>
     </div>
   )
 }

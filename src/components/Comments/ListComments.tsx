@@ -1,11 +1,22 @@
 // DEPENDENCIES
 import React from 'react'
+import { useQuery } from '@tanstack/react-query'
+import axios from 'axios'
 // STYLES
 import styles from '../../styles/Comments/ListComments.module.css'
-const ListComments: React.FC = () => {
+const ListComments: React.FC = () => { 
+  const { data } = useQuery({
+    queryKey: ['Emails'],
+    queryFn: () =>
+      axios
+        .post(
+          'http://localhost:3000/api/GetLeadOpenReport?number=CALL202102202705'
+        )
+        .then((res) => res.data)
+  })
   return (
     <div className={styles.table}>
-      <div>
+      {/* <div>
         <p>CallerID</p>
         <p>Remarks</p>
         <p>OpenDateTime</p>
@@ -24,7 +35,8 @@ const ListComments: React.FC = () => {
         <p>IFK3 5025 2403</p>
         <p>Lead Open</p>
         <p>08/04/21- 12:20:31</p>
-      </div>
+      </div> */}
+      <div dangerouslySetInnerHTML={{ __html: data }}></div>
     </div>
   )
 }

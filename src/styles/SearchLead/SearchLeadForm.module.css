@@ -1,0 +1,40 @@
+.form {
+  padding: 2rem 0;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  gap: 3rem;
+}
+.form input,
+.form label,
+.form button {
+  font-size: 1.2rem;
+}
+.form label {
+  font-weight: 700;
+}
+.form input {
+  width: 30%;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: 1px solid #868282;
+  border-radius: 6px;
+}
+.form button {
+  padding: 1rem 1.5rem;
+  color: #000;
+  border: none;
+  background-color: red;
+  color: white;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 768px) {
+  .input-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .flex {
+    width: 100%;
+  }
+}
