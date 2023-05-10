@@ -16,7 +16,7 @@ const SevenDaysLeads: React.FC = () => {
     queryFn: () =>
       axios
         .post(
-          'http://localhost:3000/api/GetAssignLeads?staffid=abhinav.singh%40dayibpl.com&userlist=abhinav.singh%40dayibpl.com'
+          'https://work-gules.vercel.app/api/GetAssignLeads?staffid=abhinav.singh%40dayibpl.com&userlist=abhinav.singh%40dayibpl.com'
         )
         .then((res) => res.data)
   })

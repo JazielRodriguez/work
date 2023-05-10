@@ -13,7 +13,7 @@ const ResumeEmails: React.FC = () => {
     queryFn: () =>
       axios
         .post(
-          'http://localhost:3000/api/GetRecEmailLogs?leadid=CALL202102202705'
+          'https://work-gules.vercel.app/api/GetRecEmailLogs?leadid=CALL202102202705'
         )
         .then((res) => res.data)
   })
@@ -22,7 +22,7 @@ const ResumeEmails: React.FC = () => {
     queryFn: () =>
       axios
         .post(
-          'http://localhost:3000/api/GetSentEmailLogs?leadid=CALL202102202705'
+          'https://work-gules.vercel.app/api/GetSentEmailLogs?leadid=CALL202102202705'
         )
         .then((res) => res.data)
   })

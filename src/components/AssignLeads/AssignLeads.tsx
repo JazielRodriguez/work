@@ -12,7 +12,7 @@ const AssignLeads: React.FC = () => {
     queryKey: ['AssignNowLeads'],
     queryFn: () =>
       axios.post(
-        'http://localhost:3000/api/GetAssignownLeads?staffid=abhinav.singh%40dayibpl.com'
+        'https://work-gules.vercel.app/api/GetAssignownLeads?staffid=abhinav.singh%40dayibpl.com'
       ).then(res => res.data)
   })
   return (

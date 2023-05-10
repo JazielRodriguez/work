@@ -10,7 +10,7 @@ const ListComments: React.FC = () => {
     queryFn: () =>
       axios
         .post(
-          'http://localhost:3000/api/GetLeadOpenReport?number=CALL202102202705'
+          'https://work-gules.vercel.app/api/GetLeadOpenReport?number=CALL202102202705'
         )
         .then((res) => res.data)
   })

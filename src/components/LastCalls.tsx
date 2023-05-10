@@ -10,7 +10,7 @@ const LastCalls: React.FC = () => {
     queryFn: () =>
       axios
         .post(
-          'http://localhost:3000/api/GetLastTenCalls?VICIUSER=reception'
+          'https://work-gules.vercel.app/api/GetLastTenCalls?VICIUSER=reception'
         )
         .then((res) => res.data)
   })

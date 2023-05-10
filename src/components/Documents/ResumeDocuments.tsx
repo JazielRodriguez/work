@@ -7,7 +7,7 @@ const ResumeDocuments: React.FC = () => {
     queryKey: ['GetDocuments'],
     queryFn: () =>
       axios
-        .post('http://localhost:3000/api/GetDocuments?number=CALL202102202705')
+        .post('https://work-gules.vercel.app/api/GetDocuments?number=CALL202102202705')
         .then((res) => res.data)
   })
 

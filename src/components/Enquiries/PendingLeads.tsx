@@ -16,7 +16,7 @@ const PendingLeads: React.FC = () => {
     queryFn: () =>
       axios
         .post(
-          'http://localhost:3000/api/GetPreviousLeadsMature?number=9958735482'
+          'https://work-gules.vercel.app/api/GetPreviousLeadsMature?number=9958735482'
         )
         .then((res) => res.data)
   })
