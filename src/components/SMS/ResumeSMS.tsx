@@ -9,7 +9,7 @@ const ResumeSMS: React.FC = () => {
     queryKey: ['GetSMSLogs'],
     queryFn: () =>
       axios
-        .post('https://work-gules.vercel.app/api/GetSMSLogs?leadid=CALL202102202705')
+        .post('http://61.246.34.128:7779/api/GetSMSLogs?leadid=CALL202102202705')
         .then((res) => res.data)
   })
   return (

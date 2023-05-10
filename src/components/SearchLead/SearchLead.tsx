@@ -8,7 +8,7 @@ const SearchLead: React.FC = () => {
     queryFn: () =>
       axios
         .post(
-          'https://work-gules.vercel.app/api/SearchLeadData?userid=abhinav.singh%40dayibpl.com&phoneno=9958735482'
+          'http://61.246.34.128:7779/api/SearchLeadData?userid=abhinav.singh%40dayibpl.com&phoneno=9958735482'
         )
         .then((res) => res.data)
   })
@@ -17,7 +17,7 @@ const SearchLead: React.FC = () => {
     queryFn: () =>
       axios
         .post(
-          'https://work-gules.vercel.app/api/GetLeadData?staffid=%20abhinav.singh%40dayibpl.com&leadid=CALL202102202705'
+          'http://61.246.34.128:7779/api/GetLeadData?staffid=%20abhinav.singh%40dayibpl.com&leadid=CALL202102202705'
         )
         .then((res) => res.data)
   })

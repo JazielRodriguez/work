@@ -15,7 +15,7 @@ const NotMatureLeads: React.FC = () => {
     queryKey: ['Not Mature Leads'],
     queryFn: () => {
       return axios
-        .post('https://work-gules.vercel.app/api/GetPreviousLeadsNew?number=9958735482')
+        .post('http://61.246.34.128:7779/api/GetPreviousLeadsNew?number=9958735482')
         .then((res) => res.data)
     }
   })
