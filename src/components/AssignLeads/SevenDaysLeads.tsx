@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import axios from 'axios'
+import { useQuery } from '@tanstack/react-query'
 import AssignedLeadsHeader from './AssignedLeadsHeader'
 import AssignLeadsTable from './AssignLeadsTable'
 import { useMediaQuery } from 'react-responsive'
@@ -9,6 +11,15 @@ const SevenDaysLeads: React.FC = () => {
   const listStateHandler = () => {
     setListIsVisible((prev) => !prev)
   }
+  const { data } = useQuery({
+    queryKey: ['AssignLeads'],
+    queryFn: () =>
+      axios
+        .post(
+          'http://localhost:3000/api/GetAssignLeads?staffid=abhinav.singh%40dayibpl.com&userlist=abhinav.singh%40dayibpl.com'
+        )
+        .then((res) => res.data)
+  })
   return (
     <div>
       <AssignedLeadsHeader
@@ -17,7 +28,7 @@ const SevenDaysLeads: React.FC = () => {
         onSetVisible={listStateHandler}
       />
       {listIsVisible && isMobile && <MobileTable />}
-      {listIsVisible && !isMobile && <AssignLeadsTable />}
+      {listIsVisible && !isMobile && <AssignLeadsTable info={data} />}
     </div>
   )
 }

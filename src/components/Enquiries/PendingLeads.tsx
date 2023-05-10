@@ -1,5 +1,7 @@
 // DEPENDENCIES
 import React, { useState } from 'react'
+import axios from 'axios'
+import { useQuery } from '@tanstack/react-query'
 import { IconContext } from 'react-icons'
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai'
 // STYLES
@@ -9,6 +11,15 @@ const PendingLeads: React.FC = () => {
   const listStateHandler = () => {
     setListIsVisible((prev) => !prev)
   }
+  const { data } = useQuery({
+    queryKey: ['Mature Leads'],
+    queryFn: () =>
+      axios
+        .post(
+          'http://localhost:3000/api/GetPreviousLeadsMature?number=9958735482'
+        )
+        .then((res) => res.data)
+  })
   return (
     <div>
       <div
@@ -21,8 +32,8 @@ const PendingLeads: React.FC = () => {
         </IconContext.Provider>
       </div>
       {listIsVisible && (
-        <div>
-          <div className={styles.table}>
+        <div dangerouslySetInnerHTML={{ __html: data }}>
+          {/* <div className={styles.table}>
             <div>
               <p>Some</p>
               <p>CallerName</p>
@@ -49,7 +60,7 @@ const PendingLeads: React.FC = () => {
               <p>1</p>
               <p>Next</p>
             </div>
-          </div>
+          </div>  */}
         </div>
       )}
     </div>

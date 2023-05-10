@@ -12,10 +12,20 @@ const SearchLead: React.FC = () => {
         )
         .then((res) => res.data)
   })
+  const { data: dataTwo } = useQuery({
+    queryKey: ['SearchLeadHyperLink'],
+    queryFn: () =>
+      axios
+        .post(
+          'http://localhost:3000/api/GetLeadData?staffid=%20abhinav.singh%40dayibpl.com&leadid=CALL202102202705'
+        )
+        .then((res) => res.data)
+  })
   return (
     <div>
       <SearchLeadForm />
       <div dangerouslySetInnerHTML={{ __html: data }}></div>
+      <div dangerouslySetInnerHTML={{ __html: dataTwo }}></div>
     </div>
   )
 }

@@ -1,9 +1,13 @@
 import React from 'react'
 import styles from '../../styles/AssignLeads/AssignLeadsTable.module.css'
-const AssignLeadsTable: React.FC = () => {
+
+const AssignLeadsTable: React.FC<{ info?: any }> = (props) => {
   return (
-    <div className={styles.table}>
-      <div>
+    <div
+      className={styles.table}
+      dangerouslySetInnerHTML={{ __html: props.info }}
+    >
+      {/* <div>
         <p>RecordID</p>
         <p>Caller</p>
         <p>Costumer</p>
@@ -38,7 +42,7 @@ const AssignLeadsTable: React.FC = () => {
         <p>email@email.com</p>
         <p>06/10/21 - 13:24:21</p>
         <p>High</p>
-      </div>
+      </div> */}
     </div>
   )
 }
